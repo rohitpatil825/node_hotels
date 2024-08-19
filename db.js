@@ -14,7 +14,7 @@ const mongoURL = process.env.MONGODB_URL;
 mongoose.connect(mongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    serverSelectionTimeoutMS: 5000 // 5 seconds timeout
+     // 5 seconds timeout
 }).catch(err => {
     console.error('Failed to connect to MongoDB server:', err);
 });
